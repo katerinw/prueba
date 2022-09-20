@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import socket from "../Socket/Socket";
 
-import GaugeChart from "react-gauge-chart";
+//import GaugeChart from "react-gauge-chart";
 
 export default function Ritmo() {
   //Hooks
-  const [bmi, setBmi] = useState(0);
+  /*const [bmi, setBmi] = useState(0);
   const [ritmo, setRitmo] = useState("");
 
   const handleChangeBmi = event => setBmi(event.target.value);
@@ -30,17 +30,19 @@ export default function Ritmo() {
     return (
       (bmi - lowerBound) / (upperBound - lowerBound) / 3 + segmentAdjustment
     );
-  }
+  }*/
 
   return (
     <div>
-      <input value={bmi} onChange={handleChangeBmi} />
+
+    </div>
+  );
+}
+
+/**      <input value={bmi} onChange={handleChangeBmi} />
       <GaugeChart
         id="gauge-chart"
         percent={gageCalc(bmi)}
         nrOfLevels={3}
         colors={["#FFFF00", "#228B22", "#FF0000"]}
-      />
-    </div>
-  );
-}
+      /> */
